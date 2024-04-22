@@ -12,14 +12,29 @@
   justify-content: space-between;
 
   padding: 15px 0;
+
+  @media (min-width: $tablet) {
+    padding: 19px 0 18px;
+    grid-template-areas: "nav logo phone";
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+  }
 }
 
 .main-header__nav {
   grid-area: nav;
+
+  @media (min-width: $tablet) {
+    margin-top: -1px;
+  }
 }
 
 .main-header__logo {
   grid-area: logo;
+
+  @media (min-width: $tablet) {
+    margin-top: 1px;
+  }
 }
 
 .main-header__phone-link {
@@ -31,4 +46,10 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 14px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 3px;
+  }
 }
