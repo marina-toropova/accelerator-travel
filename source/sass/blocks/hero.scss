@@ -1,0 +1,76 @@
+.hero {
+  color: $white-100;
+}
+
+.hero__swiper {
+  width: 320px;
+}
+
+.hero__swiper-slide {
+  background-color: $additional-100;
+  background-size: cover;
+  padding: 143.5px 0 160.5px;
+  text-align: center;
+
+  &--1 {
+    background: url("../../img/hero-mobile.jpg");
+  }
+
+  &--2 {
+    background: url("../../img/hero-mobile-slide-2.jpg");
+    padding: 134.5px 0 149.5px;
+  }
+
+  &--3 {
+    background: url("../../img/hero-mobile-slide-3.jpg");
+    padding: 121.5px 0 136.5px;
+  }
+
+  h2 {
+    margin: 0;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 26px;
+    padding: 0 15px;
+  }
+
+  p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 15px;
+    padding: 0 15px;
+  }
+}
+
+.hero__slider-link {
+  @include link-reset;
+
+  display: inline-block;
+  padding: 22px 34px 19px;
+  background-color: $additional-100;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  margin-top: 60px;
+}
+
+.hero__swiper-pagination.swiper-pagination.swiper-pagination-horizontal {
+  display: flex;
+  gap: 12px;
+  left: 112px;
+  bottom: 40px;
+
+  .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    opacity: 1;
+    border: 1px solid $white-100;
+    background: transparent;
+  }
+
+  .swiper-pagination-bullet--active {
+    background: $white-100;
+  }
+}

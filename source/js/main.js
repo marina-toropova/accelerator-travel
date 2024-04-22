@@ -4,5 +4,7 @@
 // import 'swiper/css';
 
 import { menuToggle } from './modules/burger-menu';
+import { heroSwiper } from './modules/hero-swiper';
 
 menuToggle();
+heroSwiper.init();
