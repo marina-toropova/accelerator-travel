@@ -25,6 +25,10 @@
 
   &--closed {
     display: none;
+
+    @media (min-width: $desktop) {
+      display: flex;
+    }
   }
 
   @media (min-width: $tablet) {
@@ -37,6 +41,20 @@
     line-height: 16px;
 
     row-gap: 26px;
+  }
+
+  @media (min-width: $desktop) {
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-transform: none;
+    font-weight: 400;
+    column-gap: 30.6px;
+    row-gap: 15px;
+    padding: 0;
+    width: auto;
+    letter-spacing: 0;
+    margin-top: 2px;
   }
 }
 
@@ -59,6 +77,10 @@
     background: url("../../img/menu.svg");
     width: 26px;
     height: 26px;
+  }
+
+  @media (min-width: $desktop) {
+    display: none;
   }
 }
 

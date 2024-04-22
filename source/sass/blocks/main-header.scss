@@ -19,6 +19,13 @@
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
   }
+
+  @media (min-width: $desktop) {
+    padding: 41px 0 40px;
+    grid-template-areas: "logo nav phone";
+    grid-template-columns: 205px auto 157px;
+    column-gap: 2px;
+  }
 }
 
 .main-header__nav {
@@ -34,6 +41,10 @@
 
   @media (min-width: $tablet) {
     margin-top: 1px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 32px;
   }
 }
 
@@ -51,5 +62,10 @@
     font-size: 16px;
     line-height: 16px;
     margin-top: 3px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 18px;
   }
 }
