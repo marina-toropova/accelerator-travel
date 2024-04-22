@@ -1,0 +1,51 @@
+.nav {
+  position: relative;
+}
+
+.nav__list {
+  @include list-reset;
+
+  width: 320px;
+  padding: 13px 15px 50px;
+  text-transform: uppercase;
+
+  position: absolute;
+  top: 87px;
+  left: -15px;
+  background: $additional-100;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 22px;
+
+  &--closed {
+    display: none;
+  }
+}
+
+.nav__toggle {
+  border: none;
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  margin: 1px 0 0 1px;
+
+  cursor: pointer;
+  background-image: url("/__spritemap#sprite-cross");
+
+  &--closed {
+    margin: 0;
+    background: url("../../img/menu.svg");
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.nav__link {
+  @include link-reset;
+}

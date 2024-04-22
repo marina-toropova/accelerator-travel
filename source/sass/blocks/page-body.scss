@@ -1,0 +1,12 @@
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  font-family: $font-family, "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+
+  /*   color: $basic-blue; */
+  font-weight: 300;
+  overflow-x: hidden;
+}
