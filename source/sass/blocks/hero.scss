@@ -6,90 +6,11 @@
   width: 320px;
 
   @media (min-width: $tablet) {
-    width: 768px;
-  }
-}
-
-.hero__swiper-slide {
-  background-color: $additional-100;
-  background-size: cover;
-  padding: 143.5px 0 160.5px;
-  text-align: center;
-  position: relative;
-
-  &--1 {
-    background: url("../../img/hero-mobile.jpg");
-
-    @media (min-width: $tablet) {
-      background: url("../../img/hero-tablet.jpg");
-      padding: 342px 0 402px;
-    }
+    width: $tablet;
   }
 
-  &--2 {
-    background: url("../../img/hero-mobile-slide-2.jpg");
-    padding: 134.5px 0 149.5px;
-
-    @media (min-width: $tablet) {
-      background: url("../../img/hero-tablet-slide-2.jpg");
-      padding: 137px 0 197px;
-    }
-  }
-
-  &--3 {
-    background: url("../../img/hero-mobile-slide-3.jpg");
-    padding: 121.5px 0 136.5px;
-
-    @media (min-width: $tablet) {
-      background: url("../../img/hero-tablet-slide-3.jpg");
-      padding: 342px 0 402px;
-    }
-  }
-
-  h2 {
-    margin: 0;
-    font-weight: 800;
-    font-size: 26px;
-    line-height: 26px;
-    padding: 0 15px;
-
-    @media (min-width: $tablet) {
-      font-size: 56px;
-      line-height: 56px;
-    }
-  }
-
-  p {
-    margin: 0;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;
-    margin-top: 15px;
-    padding: 0 15px;
-
-    @media (min-width: $tablet) {
-      font-size: 17px;
-      line-height: 24px;
-      width: 503px;
-      margin: 13px auto 0;
-    }
-  }
-}
-
-.hero__slider-link {
-  @include link-reset;
-
-  display: inline-block;
-  padding: 22px 34px 19px;
-  background-color: $additional-100;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
-  margin-top: 60px;
-
-  @media (min-width: $tablet) {
-    margin-top: 36.5px;
-    padding-top: 21px;
+  @media (min-width: $desktop) {
+    width: $desktop;
   }
 }
 
@@ -101,6 +22,11 @@
 
   @media (min-width: $tablet) {
     left: 43%;
+  }
+
+  @media (min-width: $desktop) {
+    left: 84.46%;
+    bottom: 92px;
   }
 
   .swiper-pagination-bullet {
@@ -118,16 +44,5 @@
 
   .swiper-pagination-bullet--active {
     background: $white-100;
-  }
-}
-
-.hero__slide-image {
-  display: none;
-
-  @media (min-width: $tablet) {
-    display: block;
-    width: 442px;
-    height: 365px;
-    margin: 45px auto 0;
   }
 }
