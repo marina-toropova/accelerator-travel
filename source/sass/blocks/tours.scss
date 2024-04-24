@@ -13,16 +13,28 @@
       bottom: -900px;
       right: -177px;
     }
+
+    @media (min-width: $desktop) {
+      background-image: url("../../img/clouds-1-desktop.jpg");
+      bottom: -690px;
+      right: 0;
+    }
   }
 }
 
 .tours__container {
   padding: 39px 0 20px;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet) {
     position: relative;
     padding: 60px 0 40px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 123px 0 100px;
   }
 }
 
@@ -36,6 +48,11 @@
     font-size: 25px;
     line-height: 25px;
   }
+
+  @media (min-width: $desktop) {
+    font-size: 35px;
+    line-height: 35px;
+  }
 }
 
 .tours__swiper {
@@ -43,6 +60,10 @@
 
   @media (min-width: $tablet) {
     margin-top: 35px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 50px;
   }
 }
 
@@ -57,13 +78,17 @@
     right: -2px;
     gap: 4px;
   }
+
+  @media (min-width: $desktop) {
+    top: 120px;
+  }
 }
 
 .tours__link {
   @include link-reset;
 
-  display: block;
-  text-align: center;
+  display: inline;
+  align-self: center;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
@@ -80,6 +105,10 @@
     margin-top: 26px;
   }
 
+  @media (min-width: $desktop) {
+    margin-top: 54px;
+  }
+
   &::after {
     @include add-element;
 
@@ -88,11 +117,11 @@
     mask-image: url("/__spritemap#sprite-right-view");
     background-color: $primary;
     top: 10px;
-    right: 47px;
+    right: 8px;
 
-    @media (min-width: $tablet) {
+/*     @media (min-width: $tablet) {
       right: 228px;
-    }
+    } */
   }
 }
 
@@ -112,12 +141,20 @@
     height: 9px;
     top: 39%;
     left: 31%;
+
+    @media (min-width: $desktop) {
+      top: 38%;
+    }
   }
 
   &--next::after {
     transform: rotate(180deg);
     top: 39%;
     left: 32%;
+
+    @media (min-width: $desktop) {
+      top: 38%;
+    }
   }
 }
 

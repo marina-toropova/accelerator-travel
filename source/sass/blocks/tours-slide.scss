@@ -20,9 +20,17 @@
     padding-bottom: 27px;
   }
 
+  @media (min-width: $desktop) {
+    background-image: url("../../img/tours-desktop-slide-1.jpg");
+  }
+
   .tours-slide__item--location {
     @media (min-width: $tablet) {
       margin-right: 40px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-right: 90px;
     }
   }
 }
@@ -34,6 +42,10 @@
   @media (min-width: $tablet) {
     background-image: url("../../img/tours-tablet-slide-2.jpg");
     padding: 224px 20px 27px;
+  }
+
+  @media (min-width: $desktop) {
+    background-image: url("../../img/tours-desktop-slide-2.jpg");
   }
 
   .tours-slide__list--information {
@@ -71,6 +83,10 @@
 
   .tours-slide__item--days {
     margin-left: 20px;
+
+    @media (min-width: $desktop) {
+      margin-left: 70px;
+    }
   }
 }
 
@@ -80,6 +96,10 @@
 
   @media (min-width: $tablet) {
     justify-content: end;
+  }
+
+  @media (min-width: $desktop) {
+    background-image: url("../../img/tours-desktop-slide-3.jpg");
   }
 
   .tours-slide__list--information {
@@ -107,6 +127,16 @@
 
   .tours-slide__item--location {
     justify-self: flex-start;
+
+    @media (min-width: $desktop) {
+      margin-right: 70px;
+    }
+  }
+
+  .tours-slide__item--nights::before {
+    @media (min-width: $desktop) {
+      left: 2px;
+    }
   }
 
   .tours-slide__title {
@@ -118,6 +148,13 @@
 
 .tours-slide--4.swiper-slide {
   background-image: url("../../img/tours-mobile-slide-4.jpg");
+
+  .tours-slide__item--location {
+
+    @media (min-width: $desktop) {
+      margin-right: 70px;
+    }
+  }
 }
 
 .tours-slide__title {
@@ -156,6 +193,10 @@
 
     @media (min-width: $tablet) {
       column-gap: 28px;
+    }
+
+    @media (min-width: $desktop) {
+      justify-content: space-between;
     }
   }
 
