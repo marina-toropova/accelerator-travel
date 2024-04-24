@@ -1,0 +1,46 @@
+.tours__container {
+  padding: 39px 0 20px;
+}
+
+.tours__title {
+  margin: 0;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.tours__swiper {
+  width: 290px;
+  margin-top: 39px;
+}
+
+.tours__navigation-wrapper {
+  display: none;
+}
+
+.tours__link {
+  @include link-reset;
+
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+
+  padding: 10px 28px 10px 10px;
+  margin-top: 25px;
+  position: relative;
+
+  &::after {
+    @include add-element;
+
+    width: 9px;
+    height: 14px;
+    mask-image: url("/__spritemap#sprite-right-view");
+    background-color: $primary;
+    top: 10px;
+    right: 47px;
+  }
+}
