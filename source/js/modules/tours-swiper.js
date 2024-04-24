@@ -10,6 +10,10 @@ const swiper = new Swiper('.tours__swiper', {
   modules: [Navigation],
   containerModifierClass: 'tours__swiper-',
   wrapperClass: 'tours__swiper-wrapper',
+  navigation: {
+    nextEl: '.tours__swiper-button--next',
+    prevEl: '.tours__swiper-button--prev',
+  },
   breakpoints: {
 
     320: {
@@ -20,11 +24,11 @@ const swiper = new Swiper('.tours__swiper', {
 
     768: {
       slidesPerView: 2,
-      spaceBetween: 40,
+      spaceBetween: 18,
       initialSlide: 0,
     },
 
-    1366: {
+    1440: {
       initialSlide: 0,
       slidesPerView: 4,
       spaceBetween: 40
