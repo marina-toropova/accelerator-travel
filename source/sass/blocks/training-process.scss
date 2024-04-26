@@ -3,6 +3,11 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .training-process__list {
@@ -16,6 +21,17 @@
 
   position: relative;
 
+  @media (min-width: $tablet) {
+    padding: 0;
+    margin-top: 100px;
+    grid-template-areas:
+      "learning  clarification"
+      "preparing lectures";
+    grid-template-columns: 1fr 1fr;
+    column-gap: 134px;
+    row-gap: 104px;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -24,6 +40,10 @@
     background-color: $additional-100;
     top: 12px;
     left: 6px;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
   }
 }
 
@@ -37,6 +57,38 @@
 
   position: relative;
 
+  @media (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 22px;
+    padding-left: 35px;
+  }
+
+  &--learning {
+    @media (min-width: $tablet) {
+      grid-area: learning;
+    }
+  }
+
+  &--clarification {
+    @media (min-width: $tablet) {
+      grid-area: clarification;
+    }
+  }
+
+  &--preparing {
+    @media (min-width: $tablet) {
+      grid-area: preparing;
+      padding-left: 34px;
+    }
+  }
+
+  &--lectures {
+    @media (min-width: $tablet) {
+      grid-area: lectures;
+      padding-left: 33px;
+    }
+  }
+
   &::before {
     @include add-element;
 
@@ -45,6 +97,10 @@
     top: 1px;
     left: 0;
     background-color: $primary;
+
+    @media (min-width: $tablet) {
+      top: 2px;
+    }
   }
 
   &--learning::before {
@@ -57,6 +113,10 @@
 
   &--lectures::before {
     background-image: url("/__spritemap#sprite-pine-tree-view");
+
+    @media (min-width: $tablet) {
+      left: -1px;
+    }
   }
 
   &--clarification::before {
@@ -72,5 +132,9 @@
     border-radius: 50%;
     left: -29px;
     top: 12px;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
   }
 }

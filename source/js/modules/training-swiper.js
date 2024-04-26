@@ -18,12 +18,12 @@ const swiper = new Swiper('.training__swiper', {
     320: {
       slidesPerView: 1,
       spaceBetween: 15,
-      initialSlide: 0,
+      initialSlide: 2,
     },
 
     768: {
-      slidesPerView: 2,
-      spaceBetween: 18,
+      slidesPerView: 3,
+      spaceBetween: 20,
       initialSlide: 0,
     },
 

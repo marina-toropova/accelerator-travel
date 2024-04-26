@@ -1,25 +1,6 @@
 .tours {
   overflow-x: hidden;
   position: relative;
-
-  &::after {
-    @media (min-width: $tablet) {
-      position: absolute;
-      content: "";
-      width: 602px;
-      height: 1630px;
-      background-image: url("../../img/clouds-1.jpg");
-      z-index: -1;
-      bottom: -900px;
-      right: -177px;
-    }
-
-    @media (min-width: $desktop) {
-      background-image: url("../../img/clouds-1-desktop.jpg");
-      bottom: -690px;
-      right: 0;
-    }
-  }
 }
 
 .tours__container {
@@ -105,5 +86,13 @@
     /*     @media (min-width: $tablet) {
       right: 228px;
     } */
+  }
+}
+
+.tours__navigation-wrapper {
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: 60px;
+    right: -2px;
   }
 }

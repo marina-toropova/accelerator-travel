@@ -8,4 +8,24 @@
   color: $primary;
   font-weight: 300;
   overflow-x: hidden;
+  position: relative;
+
+  &::after {
+    @media (min-width: $tablet) {
+      position: absolute;
+      content: "";
+      width: 602px;
+      height: 1630px;
+      background-image: url("../../img/clouds-1.jpg");
+      z-index: -1;
+      top: 1024px;
+      right: -177px;
+    }
+
+    @media (min-width: $desktop) {
+      background-image: url("../../img/clouds-1-desktop.jpg");
+      top: 1024px;
+      right: 0;
+    }
+  }
 }
