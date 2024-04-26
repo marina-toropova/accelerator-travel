@@ -16,3 +16,9 @@
   mask-position: center center;
   mask-size: contain;
 }
+
+@mixin background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}

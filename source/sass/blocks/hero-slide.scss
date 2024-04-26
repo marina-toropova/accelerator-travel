@@ -4,6 +4,9 @@
   text-align: center;
   position: relative;
 
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+
   @media (min-width: $desktop) {
     text-align: left;
     min-height: 800px;
@@ -13,14 +16,21 @@
     background: url("../../img/hero-mobile.jpg");
     padding: 143.5px 0 160.5px;
 
+    @include background;
+
     @media (min-width: $tablet) {
       background: url("../../img/hero-tablet.jpg");
+
+      @include background;
+
       padding: 342px 0 402px;
     }
 
     @media (min-width: $desktop) {
       background: url("../../img/hero-desktop.jpg");
       padding: 200px 0 80px;
+
+      @include background;
     }
   }
 
@@ -28,14 +38,20 @@
     background: url("../../img/hero-mobile-slide-2.jpg");
     padding: 134.5px 0 149.5px;
 
+    @include background;
+
     @media (min-width: $tablet) {
       background: url("../../img/hero-tablet-slide-2.jpg");
       padding: 137px 0 607px;
+
+      @include background;
     }
 
     @media (min-width: $desktop) {
       background: url("../../img/hero-desktop-slide-2.jpg");
       padding: 200px 0 80px;
+
+      @include background;
     }
   }
 
@@ -43,14 +59,20 @@
     background: url("../../img/hero-mobile-slide-3.jpg");
     padding: 121.5px 0 136.5px;
 
+    @include background;
+
     @media (min-width: $tablet) {
       background: url("../../img/hero-tablet-slide-3.jpg");
       padding: 342px 0 402px;
+
+      @include background;
     }
 
     @media (min-width: $desktop) {
       background: url("../../img/hero-desktop-slide-3.jpg");
       padding: 200px 0 80px;
+
+      @include background;
     }
   }
 
