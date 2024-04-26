@@ -2,23 +2,22 @@ import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 
 
-const swiper = new Swiper('.tours__swiper', {
+const swiper = new Swiper('.training__swiper', {
   direction: 'horizontal',
   modules: [Navigation],
-  containerModifierClass: 'tours__swiper-',
-  wrapperClass: 'tours__swiper-wrapper',
+  containerModifierClass: 'training__swiper-',
+  wrapperClass: 'training__swiper-wrapper',
   navigation: {
-    nextEl: '.slider-navigation__button--next',
-    prevEl: '.slider-navigation__button--prev',
+    nextEl: '.training__slider-navigation-button--next',
+    prevEl: '.training__slider-navigation-button--prev',
   },
   breakpoints: {
 
     320: {
       slidesPerView: 1,
-      spaceBetween: 20,
+      spaceBetween: 15,
       initialSlide: 0,
     },
 
@@ -36,6 +35,6 @@ const swiper = new Swiper('.tours__swiper', {
   }
 });
 
-const toursSwiper = document.querySelector('.tours__swiper').swiper;
+const trainingSwiper = document.querySelector('.training__swiper').swiper;
 
-export { swiper, toursSwiper };
+export { swiper, trainingSwiper };

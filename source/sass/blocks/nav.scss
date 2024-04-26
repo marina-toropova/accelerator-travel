@@ -10,7 +10,7 @@
   text-transform: uppercase;
 
   position: absolute;
-  top: 87px;
+  top: 85px;
   left: -15px;
   background: $additional-100;
 
@@ -67,7 +67,7 @@
   margin: 1px 0 0 1px;
 
   cursor: pointer;
-  background-image: url("/__spritemap#sprite-cross");
+  background-image: url("/__spritemap#sprite-cross-view");
 
   @media (min-width: $tablet) {
     margin: 0 0 0 1px;

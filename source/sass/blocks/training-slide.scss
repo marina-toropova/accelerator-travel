@@ -1,0 +1,57 @@
+.training-slide.swiper-slide {
+  border: 1px solid $additional-20;
+  display: grid;
+  grid-template-areas:
+    "photo photo"
+    ".     ."
+    "title link"
+    ".     ."
+    "text  text";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 16px auto 14px auto;
+
+  padding: 14px;
+
+  h4 {
+    margin: 0;
+    grid-area: title;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  p {
+    margin: 0;
+    grid-area: text;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  a {
+    grid-area: link;
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgba(45, 56, 63, 0.3);
+    justify-self: end;
+    position: relative;
+  }
+
+  a svg {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+  }
+}
+
+.training-slide__image {
+  grid-area: photo;
+  width: 260px;
+  height: 200px;
+  order: -1;
+
+  img {
+    height: 100%;
+  }
+}
