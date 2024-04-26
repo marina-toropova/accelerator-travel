@@ -16,6 +16,12 @@
   @media (min-width: $tablet) {
     grid-template-rows: 200px 16px min-content 14px auto;
     grid-template-columns: 70% 30%;
+    min-height: 388px;
+  }
+
+  @media (min-width: $desktop) {
+    min-height: 356px;
+    grid-template-columns: 1fr 1fr;
   }
 
   h4 {
@@ -62,11 +68,21 @@
     height: 200px;
   }
 
+  @media (min-width: $desktop) {
+    width: 255px;
+    height: 200px;
+  }
+
   img {
     height: 100%;
 
     @media (min-width: $tablet) {
       width: 183px;
+      height: 200px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 255px;
       height: 200px;
     }
   }

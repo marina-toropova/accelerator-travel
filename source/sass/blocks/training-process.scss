@@ -1,3 +1,15 @@
+.training-process {
+  padding-top: 26px;
+
+  @media (min-width: $tablet) {
+    padding-top: 27px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 58px 0 40px;
+  }
+}
+
 .training-process__title {
   margin: 0;
   font-weight: 700;
@@ -7,6 +19,11 @@
   @media (min-width: $tablet) {
     font-size: 18px;
     line-height: 18px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 21px;
+    line-height: 21px;
   }
 }
 
@@ -32,6 +49,13 @@
     row-gap: 104px;
   }
 
+  @media (min-width: $desktop) {
+    margin-top: 27px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -43,6 +67,14 @@
 
     @media (min-width: $tablet) {
       display: none;
+    }
+
+    @media (min-width: $desktop) {
+      display: block;
+      width: 98%;
+      height: 2px;
+      top: 80px;
+      left: 25px;
     }
   }
 }
@@ -63,15 +95,30 @@
     padding-left: 35px;
   }
 
+  @media (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 253px;
+    padding-left: 45px;
+  }
+
   &--learning {
     @media (min-width: $tablet) {
       grid-area: learning;
+    }
+
+    @media (min-width: $desktop) {
+      padding-left: 45px;
     }
   }
 
   &--clarification {
     @media (min-width: $tablet) {
       grid-area: clarification;
+    }
+
+    @media (min-width: $desktop) {
+      padding-left: 46px;
     }
   }
 
@@ -80,12 +127,29 @@
       grid-area: preparing;
       padding-left: 34px;
     }
+
+    @media (min-width: $desktop) {
+      padding-left: 45px;
+    }
   }
 
   &--lectures {
     @media (min-width: $tablet) {
       grid-area: lectures;
       padding-left: 33px;
+    }
+
+    @media (min-width: $desktop) {
+      padding-left: 46px;
+    }
+  }
+
+  &--lectures br,
+  &--clarification br {
+    display: none;
+
+    @media (min-width: $desktop) {
+      display: block;
     }
   }
 
@@ -100,6 +164,10 @@
 
     @media (min-width: $tablet) {
       top: 2px;
+    }
+
+    @media (min-width: $desktop) {
+      left: 10px;
     }
   }
 
@@ -117,10 +185,18 @@
     @media (min-width: $tablet) {
       left: -1px;
     }
+
+    @media (min-width: $desktop) {
+      left: 11px;
+    }
   }
 
   &--clarification::before {
     background-image: url("/__spritemap#sprite-mountain-view");
+
+    @media (min-width: $desktop) {
+      left: 11px;
+    }
   }
 
   &::after {
@@ -135,6 +211,24 @@
 
     @media (min-width: $tablet) {
       display: none;
+    }
+
+    @media (min-width: $desktop) {
+      display: block;
+      left: 20px;
+      top: 74px;
+    }
+  }
+
+  &--lectures::after {
+    @media (min-width: $desktop) {
+      left: 1px;
+    }
+  }
+
+  &--clarification::after {
+    @media (min-width: $desktop) {
+      left: 21px;
     }
   }
 }

@@ -29,8 +29,8 @@ const swiper = new Swiper('.training__swiper', {
 
     1440: {
       initialSlide: 0,
-      slidesPerView: 3,
-      spaceBetween: 30
+      slidesPerView: 4,
+      spaceBetween: 20
     }
   }
 });
