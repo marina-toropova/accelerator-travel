@@ -12,3 +12,4 @@ menuToggle();
 heroSwiper.init();
 toursSwiper.init();
 trainingSwiper.init();
+

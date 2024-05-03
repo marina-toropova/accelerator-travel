@@ -1,9 +1,11 @@
 .training__container {
   padding-top: 37px;
+  margin-bottom: 21px;
   position: relative;
 
   @media (min-width: $tablet) {
     padding-top: 59px;
+    margin-bottom: 42px;
   }
 
   @media (min-width: $desktop) {
