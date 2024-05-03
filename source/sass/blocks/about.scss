@@ -1,5 +1,9 @@
+.about {
+  overflow-x: hidden;
+}
+
 .about__container {
-  padding: 421px 0 20px;
+  padding: 421px 0 21px;
   position: relative;
 
   @media (min-width: $tablet) {
