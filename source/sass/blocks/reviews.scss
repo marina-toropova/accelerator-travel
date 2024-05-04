@@ -4,6 +4,10 @@
 
 .reviews__container {
   padding: 21px 0 20px;
+
+  @media (min-width: $tablet) {
+    padding: 44px 0 40px;
+  }
 }
 
 .reviews__title {
@@ -13,4 +17,23 @@
   font-weight: 800;
   font-size: 22px;
   line-height: 22px;
+
+  @media (min-width: $tablet) {
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
+
+.reviews__swiper {
+  @media (min-width: $tablet) {
+    position: relative;
+  }
+}
+
+.reviews__navigation-wrapper {
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: -41px;
+    right: -2px;
+  }
 }

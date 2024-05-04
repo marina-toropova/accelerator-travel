@@ -20,12 +20,14 @@ const swiper = new Swiper('.reviews__swiper', {
       slidesPerView: 1,
       spaceBetween: 20,
       initialSlide: 0,
+      width: 290,
     },
 
     768: {
-      slidesPerView: 2,
-      spaceBetween: 18,
+      slidesPerView: 1,
+      spaceBetween: 30,
       initialSlide: 0,
+      width: 565,
     },
 
     1440: {
