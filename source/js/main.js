@@ -8,9 +8,11 @@ import { heroSwiper } from './modules/hero-swiper';
 import { toursSwiper } from './modules/tours-swiper';
 import { trainingSwiper } from './modules/training-swiper';
 import { reviewsSwiper } from './modules/reviews-swiper';
+import { advantagesSwiper } from './modules/advantages-swiper';
 
 menuToggle();
 heroSwiper.init();
 toursSwiper.init();
 trainingSwiper.init();
 reviewsSwiper.init();
+advantagesSwiper.init();

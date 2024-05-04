@@ -1,0 +1,54 @@
+.advantages-slide {
+  border: 1px solid $additional-20;
+  padding: 81px 9px 19px;
+
+  h3 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    margin: 0;
+  }
+
+  p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+    margin-top: 15px;
+  }
+
+  &::before {
+    @include add-element;
+
+    width: 42px;
+    height: 42px;
+    border: 1px solid $additional-100;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &--safety::before {
+    background-image: url("../../img/sprite/safety.svg");
+  }
+
+  &--expertise::before {
+    background-image: url("../../img/sprite/crown.svg");
+  }
+
+  &--equipment::before {
+    background-image: url("../../img/sprite/boots-blue.svg");
+  }
+
+  &--routes::before {
+    background-image: url("../../img/sprite/path.svg");
+  }
+
+  &--care::before {
+    background-image: url("../../img/sprite/leaf.svg");
+  }
+}
