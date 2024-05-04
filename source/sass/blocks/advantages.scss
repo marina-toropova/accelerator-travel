@@ -1,5 +1,9 @@
 .advantages__container {
   padding: 37px 0 20px;
+
+  @media (min-width: $tablet) {
+    padding: 60px 0 40px;
+  }
 }
 
 .advantages__title {
@@ -8,6 +12,11 @@
   font-weight: 800;
   font-size: 22px;
   line-height: 22px;
+
+  @media (min-width: $tablet) {
+    font-size: 25px;
+    line-height: 25px;
+  }
 }
 
 .advantages__swiper-wrapper.swiper-wrapper {
@@ -15,8 +24,26 @@
   row-gap: 15px;
   margin-top: 36px;
 
-  @media (min-width: $desktop) {
+  @media (min-width: $tablet) {
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    margin-top: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    flex-wrap: nowrap;
     row-gap: 0;
+  }
+}
+
+.advantages__navigation-wrapper {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+
+  @media (min-width: $desktop) {
+    display: block;
   }
 }
