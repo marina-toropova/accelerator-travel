@@ -32,8 +32,9 @@ const swiper = new Swiper('.reviews__swiper', {
 
     1440: {
       initialSlide: 0,
-      slidesPerView: 3,
-      spaceBetween: 30
+      slidesPerView: 1,
+      spaceBetween: 120,
+      width: 700,
     }
   }
 });
