@@ -16,3 +16,5 @@ toursSwiper.init();
 trainingSwiper.init();
 reviewsSwiper.init();
 advantagesSwiper.init();
+
+

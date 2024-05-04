@@ -7,6 +7,11 @@
     min-height: 340px;
   }
 
+  @media (min-width: $desktop) {
+    padding: 123px 19px 39px;
+    min-height: 329px;
+  }
+
   h3 {
     font-weight: 600;
     font-size: 14px;
@@ -17,6 +22,11 @@
     @media (min-width: $tablet) {
       font-size: 16px;
       line-height: 16px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 18px;
+      line-height: 18px;
     }
   }
 
@@ -33,11 +43,25 @@
       line-height: 22px;
       margin-top: 14px;
     }
+
+    @media (min-width: $desktop) {
+      margin-top: 15px;
+    }
   }
 
   &--care {
     @media (min-width: $tablet) {
       margin: 0 auto;
+    }
+
+    @media (min-width: $desktop) {
+      margin: 0;
+    }
+  }
+
+  &--care br {
+    @media (min-width: $desktop) {
+      display: none;
     }
   }
 
@@ -57,6 +81,12 @@
       width: 48px;
       height: 48px;
       top: 53px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 54px;
+      height: 54px;
+      top: 66px;
     }
   }
 

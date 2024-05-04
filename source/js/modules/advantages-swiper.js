@@ -15,22 +15,29 @@ const swiper = new Swiper('.advantages__swiper', {
     nextEl: '.slider-navigation__button--next',
     prevEl: '.slider-navigation__button--prev',
   },
-  loop: true,
-  init: false,
-
   breakpoints: {
 
     320: {
-      init: false,
+      allowTouchMove: false,
+      width: 290,
     },
 
     768: {
-      init: false,
+      allowTouchMove: false,
+      width: 324,
     },
 
     1440: {
-      initialSlide: 2,
-      init: true,
+      initialSlide: 1,
+      width: 380,
+      slidesPerGroup: 1,
+      loopAddBlankSlides: false,
+      loopAdditionalSlides: 0,
+      centeredSlides: true,
+      loopPreventsSliding: false,
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 30,
     }
   }
 });
