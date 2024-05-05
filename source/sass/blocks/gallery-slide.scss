@@ -5,18 +5,27 @@
     "first third";
   row-gap: 4px;
   column-gap: 5px;
+
+  @media (min-width: $desktop) {
+    row-gap: 0;
+  }
 }
 
 .gallery-slide--3.swiper-slide {
   grid-template-areas:
-  "first"
-  "first";
+    "first"
+    "first";
   grid-template-columns: 158px;
   grid-template-rows: 256px;
 
   @media (min-width: $tablet) {
     grid-template-columns: 253px;
     grid-template-rows: 418px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 284px;
+    grid-template-rows: 463px;
   }
 }
 
@@ -29,6 +38,11 @@
     @media (min-width: $tablet) {
       width: 253px;
       height: 418px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 284px;
+      height: 463px;
     }
   }
 
@@ -43,6 +57,11 @@
       width: 252px;
       height: 210px;
     }
+
+    @media (min-width: $desktop) {
+      width: 284px;
+      height: 240px;
+    }
   }
 
   &--3 {
@@ -54,11 +73,17 @@
       width: 252px;
       height: 202px;
     }
+
+    @media (min-width: $desktop) {
+      width: 284px;
+      height: 220px;
+    }
   }
 
   img {
     @media (min-width: $tablet) {
       object-fit: cover;
+      object-position: bottom;
     }
   }
 }

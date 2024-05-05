@@ -20,6 +20,7 @@ const swiper = new Swiper('.advantages__swiper', {
     320: {
       allowTouchMove: false,
       width: 290,
+      enabled: false,
     },
 
     768: {
@@ -38,6 +39,7 @@ const swiper = new Swiper('.advantages__swiper', {
       loop: true,
       slidesPerView: 1,
       spaceBetween: 30,
+      enabled: true,
     }
   }
 });

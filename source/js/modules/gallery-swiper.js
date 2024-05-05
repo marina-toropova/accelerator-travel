@@ -30,7 +30,10 @@ const swiper = new Swiper('.gallery__swiper', {
     },
 
     1440: {
+      slidesPerView: 2.5,
+      spaceBetween: 5,
       allowTouchMove: false,
+      enabled: false,
     }
   }
 });
