@@ -3,12 +3,33 @@
   margin: 0 auto;
   padding: 37px 0 3px;
 
+  @media (min-width: $tablet) {
+    width: 768px;
+    padding-top: 60px;
+  }
+
   p {
     margin: 0;
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
     margin-top: 26px;
+
+    @media (min-width: $tablet) {
+      font-size: 14px;
+      line-height: 22px;
+
+      margin-top: 30px;
+      width: 420px;
+    }
+  }
+
+  p br {
+    display: none;
+
+    @media (min-width: $tablet) {
+      display: block;
+    }
   }
 }
 
@@ -18,8 +39,26 @@
   line-height: 22px;
 
   margin: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 25px;
+    line-height: 25px;
+  }
 }
 
 .gallery__swiper {
   margin-top: 31px;
+
+  @media (min-width: $tablet) {
+    margin-top: 21px;
+    position: relative;
+  }
+}
+
+.gallery__navigation-wrapper {
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: -56px;
+    right: 43px;
+  }
 }

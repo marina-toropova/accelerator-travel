@@ -24,7 +24,7 @@ const swiper = new Swiper('.gallery__swiper', {
     },
 
     768: {
-      slidesPerView: 2,
+      slidesPerView: 1.5,
       spaceBetween: 5,
       initialSlide: 0,
     },
