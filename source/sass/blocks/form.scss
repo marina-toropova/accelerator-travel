@@ -3,11 +3,19 @@
   background-image: url("../../img/form-mobile.jpg");
   background-position-y: 70%;
   color: $white-100;
+
+  @media (min-width: $tablet) {
+    background-image: url("../../img/form-tablet.jpg");
+  }
 }
 
 .form__container {
   padding: 175px 0 173px;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    padding: 183px 0 180.5px;
+  }
 
   h2 {
     margin: 0;
@@ -15,6 +23,14 @@
     font-weight: 800;
     font-size: 22px;
     line-height: 22px;
+
+    @media (min-width: $tablet) {
+      font-weight: 800;
+      font-size: 25px;
+      line-height: 25px;
+
+      padding-right: 5px;
+    }
   }
 
   p {
@@ -24,6 +40,21 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
+
+    @media (min-width: $tablet) {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+
+      width: 300px;
+      margin-top: 28px;
+    }
+  }
+
+  p br {
+    @media (min-width: $tablet) {
+      display: none;
+    }
   }
 }
 
@@ -35,14 +66,27 @@
   row-gap: 8px;
   margin-top: 20px;
 
+  @media (min-width: $tablet) {
+    margin-top: 25px;
+    row-gap: 11px;
+  }
+
   .input,
   .button {
-    width: 258px;
+    min-width: 258px;
     border: none;
+
+    @media (min-width: $tablet) {
+      min-width: 360px;
+    }
   }
 
   .input {
     padding: 17px 15px;
+
+    @media (min-width: $tablet) {
+      padding: 20px 30px;
+    }
   }
 
   .input::placeholder {
@@ -59,5 +103,9 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 16px;
+
+    @media (min-width: $tablet) {
+      padding: 20px 19px 19px;
+    }
   }
 }
