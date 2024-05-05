@@ -2,10 +2,18 @@
   background-color: $primary;
   background-image: url("../../img/form-mobile.jpg");
   background-position-y: 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
   color: $white-100;
+  width: 100vw;
 
   @media (min-width: $tablet) {
     background-image: url("../../img/form-tablet.jpg");
+  }
+
+  @media (min-width: $desktop) {
+    background-image: url("../../img/form-desktop.jpg");
   }
 }
 
@@ -15,6 +23,10 @@
 
   @media (min-width: $tablet) {
     padding: 183px 0 180.5px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 297px 0 292px;
   }
 
   h2 {
@@ -30,6 +42,12 @@
       line-height: 25px;
 
       padding-right: 5px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 35px;
+      line-height: 35px;
+      padding: 0;
     }
   }
 
@@ -48,6 +66,11 @@
 
       width: 300px;
       margin-top: 28px;
+    }
+
+    @media (min-width: $desktop) {
+      width: fit-content;
+      margin-top: 18px;
     }
   }
 
@@ -71,13 +94,21 @@
     row-gap: 11px;
   }
 
+  @media (min-width: $desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    margin: 38px auto 0;
+    justify-content: center;
+  }
+
   .input,
   .button {
-    min-width: 258px;
+    width: 258px;
     border: none;
 
     @media (min-width: $tablet) {
-      min-width: 360px;
+      width: 360px;
     }
   }
 
@@ -106,6 +137,10 @@
 
     @media (min-width: $tablet) {
       padding: 20px 19px 19px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 180px;
     }
   }
 }
