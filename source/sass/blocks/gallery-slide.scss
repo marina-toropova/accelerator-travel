@@ -1,0 +1,26 @@
+.gallery-slide.swiper-slide {
+  display: grid;
+  grid-template-areas:
+    "first second"
+    "first third";
+  row-gap: 4px;
+  column-gap: 5px;
+}
+
+.gallery-slide__image {
+  &--1 {
+    grid-area: first;
+  }
+
+  &--2 {
+    grid-area: second;
+  }
+
+  &--2 img {
+    height: 134px;
+  }
+
+  &--3 {
+    grid-area: third;
+  }
+}
