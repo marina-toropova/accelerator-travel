@@ -15,17 +15,21 @@
   grid-template-areas:
     "first"
     "first";
-  grid-template-columns: 158px;
+  grid-template-columns: 320px;
   grid-template-rows: 256px;
 
   @media (min-width: $tablet) {
-    grid-template-columns: 253px;
+    grid-template-columns: 510px;
     grid-template-rows: 418px;
   }
 
   @media (min-width: $desktop) {
     grid-template-columns: 284px;
     grid-template-rows: 463px;
+  }
+
+  .gallery-slide__image {
+    justify-self: center;
   }
 }
 

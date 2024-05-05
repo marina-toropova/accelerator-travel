@@ -20,7 +20,6 @@ const swiper = new Swiper('.advantages__swiper', {
     320: {
       allowTouchMove: false,
       width: 290,
-      enabled: false,
     },
 
     768: {
