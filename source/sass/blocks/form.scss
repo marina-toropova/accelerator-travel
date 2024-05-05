@@ -1,0 +1,63 @@
+.form {
+  background-color: $primary;
+  background-image: url("../../img/form-mobile.jpg");
+  background-position-y: 70%;
+  color: $white-100;
+}
+
+.form__container {
+  padding: 175px 0 173px;
+  text-align: center;
+
+  h2 {
+    margin: 0;
+
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  p {
+    margin: 19px auto 0;
+    width: 216px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.form__list {
+  @include list-reset;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin-top: 20px;
+
+  .input,
+  .button {
+    width: 258px;
+    border: none;
+  }
+
+  .input {
+    padding: 17px 15px;
+  }
+
+  .input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    opacity: 0.5;
+  }
+
+  .button {
+    padding: 22px 19px 20px;
+    background-color: $additional-100;
+    color: $white-100;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}

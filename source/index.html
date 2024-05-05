@@ -560,6 +560,36 @@
       </div>
     </section>
 
+    <section class="form" data-test="form">
+      <div class="form__container container">
+        <h2>Остались вопросы?</h2>
+        <p>Заполните форму и наш оператор свяжется <br> с вами для консультации.</p>
+
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <ul class="form__list">
+
+            <li class="form__item form__item--phone">
+              <label>
+                <span class="visually-hidden">Телефон:</span>
+                <input class="input input--phone" type="tel" pattern="^[ 0-9]+$" title="Допускается вводить только цифры" name="phone" id="phone" placeholder="Телефон" minlength="11" required>
+              </label>
+            </li>
+
+            <li class="form__item form__item--name">
+              <label>
+                <span class="visually-hidden">Email:</span>
+                <input class="input input--name" type="email" name="email" placeholder="Email" id="email" title="В это поле допускается ввод только электронной почты" pattern="^\S+@\S+\.\S+$" required>
+              </label>
+            </li>
+
+            <li class="form__item form__item--button">
+              <button class="button button--submit" type="submit">Отправить</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
+
     <!-- пример использования спрайта -->
 <!--     <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
@@ -567,8 +597,7 @@
     </svg> -->
     <!-- примеры требуемых атрибутов data-test="*" -->
 
-<!--  <div data-test="form">form</div>
-    <div data-test="footer">footer</div> -->
+<!--  <div data-test="footer">footer</div> -->
     <script type="module" src="js/main.js"></script>
   </body>
 
