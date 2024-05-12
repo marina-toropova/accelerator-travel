@@ -22,15 +22,15 @@
   }
 
   &--tel::before {
-    background-image: url("../../img/sprite/phone.svg");
+    background-image: url("/__spritemap#sprite-phone-view");
   }
 
   &--email::before {
-    background-image: url("../../img/sprite/mail.svg");
+    background-image: url("/__spritemap#sprite-mail-view");
   }
 
   &--address::before {
-    background-image: url("../../img/sprite/pin-stroke.svg");
+    background-image: url("/__spritemap#sprite-pin-stroke-view");
   }
 }
 
