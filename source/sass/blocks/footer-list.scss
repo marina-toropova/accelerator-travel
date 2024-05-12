@@ -6,6 +6,50 @@
   justify-items: center;
   row-gap: 15px;
   column-gap: 50px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+  }
+}
+
+.footer-list__item {
+  &--tours {
+    @media (min-width: $tablet) {
+      order: -2;
+    }
+  }
+
+  &--study {
+    @media (min-width: $tablet) {
+      order: -1;
+    }
+  }
+
+  &--about {
+    @media (min-width: $tablet) {
+      order: 0;
+    }
+  }
+
+  &--reviews {
+    @media (min-width: $tablet) {
+      order: 1;
+    }
+  }
+
+  &--photos {
+    @media (min-width: $tablet) {
+      order: 2;
+    }
+  }
+
+  &--contacts {
+    @media (min-width: $tablet) {
+      order: 3;
+    }
+  }
 }
 
 .footer-list__link {

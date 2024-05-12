@@ -1,17 +1,46 @@
 .inner-footer__container {
   padding: 21px 0 20px;
+
+  @media (min-width: $tablet) {
+    padding-top: 52px;
+
+    display: grid;
+    grid-template-areas:
+      "logo   list"
+      "social social"
+      "text   text";
+    grid-template-columns: 142px auto;
+    column-gap: 42.3px;
+    row-gap: 33px;
+  }
 }
 
 .inner-footer__logo {
   text-align: center;
+
+  @media (min-width: $tablet) {
+    grid-area: logo;
+    justify-self: start;
+  }
 }
 
 .inner-footer__list.footer-list {
   margin-top: 21px;
+
+  @media (min-width: $tablet) {
+    grid-area: list;
+    margin: 0;
+    align-self: center;
+  }
 }
 
 .inner-footer__social.social {
   margin-top: 23px;
+
+  @media (min-width: $tablet) {
+    grid-area: social;
+    margin: 0;
+  }
 }
 
 .inner-footer__text {
@@ -20,4 +49,9 @@
   font-weight: 300;
   font-size: 12px;
   line-height: 12px;
+
+  @media (min-width: $tablet) {
+    grid-area: text;
+    margin: 0;
+  }
 }
