@@ -1,0 +1,29 @@
+.button {
+  border: 1px solid $additional-100;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: $active;
+    background: $white-100;
+    border-color: $active;
+  }
+
+  &:active {
+    background: $active;
+    color: $white-100;
+    border-color: $active;
+  }
+
+  &:focus {
+    color: $active;
+    background: $white-100;
+    border-color: transparent;
+  }
+
+  &[aria-disabled="true"] {
+    pointer-events: none;
+    color: $white-100;
+    background: $disabled;
+    border-color: $disabled;
+  }
+}

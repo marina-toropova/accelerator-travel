@@ -87,4 +87,23 @@
 
 .nav__link {
   @include link-reset;
+
+  &:hover {
+    border-bottom: 1px solid $white-100;
+    padding: 2px 0;
+  }
+
+  &:focus {
+    outline: 1px solid $white-100;
+  }
+
+  &:active {
+    color: $active;
+    outline: none;
+    border-color: transparent;
+  }
+
+  &[aria-disabled="true"] {
+    color: $disabled;
+  }
 }

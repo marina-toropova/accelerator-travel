@@ -87,6 +87,38 @@
       right: 228px;
     } */
   }
+
+  &:hover {
+    color: $additional-20;
+  }
+
+  &:hover.tours__link::after {
+    background-color: $additional-20;
+  }
+
+  &:focus {
+    color: $additional-100;
+  }
+
+  &:focus.tours__link::after {
+    background-color: $additional-100;
+  }
+
+  &:active {
+    color: $active;
+  }
+
+  &[aria-disabled="true"].tours__link::after {
+    background-color: $active;
+  }
+
+  &:active {
+    color: $disabled;
+  }
+
+  &[aria-disabled="true"].tours__link::after {
+    background-color: $disabled;
+  }
 }
 
 .tours__navigation-wrapper {

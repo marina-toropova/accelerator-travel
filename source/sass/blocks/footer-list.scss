@@ -60,4 +60,23 @@
     font-size: 16px;
     line-height: 16px;
   }
+
+  &:hover {
+    border-bottom: 1px solid $primary;
+    padding: 2px 0;
+  }
+
+  &:focus {
+    outline: 1px solid $primary;
+  }
+
+  &:active {
+    color: $additional-100;
+    outline: none;
+    border-color: transparent;
+  }
+
+  &[aria-disabled="true"] {
+    color: $disabled;
+  }
 }

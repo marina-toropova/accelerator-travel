@@ -21,22 +21,22 @@
 
           <ul class="nav__list nav__list--closed">
             <li class="nav__item">
-              <a class="nav__link" href="#">Туры</a>
+              <a class="nav__link" href="#tours">Туры</a>
               </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Обучение</a>
+              <a class="nav__link" href="#training">Обучение</a>
               </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">О нас</a>
+              <a class="nav__link" href="#about">О нас</a>
               </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Отзывы</a>
+              <a class="nav__link" href="#reviews">Отзывы</a>
               </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Фотографии</a>
+              <a class="nav__link" href="#gallery">Фотографии</a>
               </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Контакты</a>
+              <a class="nav__link" href="#contacts">Контакты</a>
               </li>
           </ul>
         </nav>
@@ -67,7 +67,7 @@
               <div class="hero-slide__container container">
                 <h2>Захватывающие вершины Кавказа</h2>
                 <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
-                <a class="hero-slide__link" href="#">Смотреть тур</a>
+                <a class="hero-slide__link button button--blue" href="#">Смотреть тур</a>
                 <ul class="hero-slide__list">
                   <li class="hero-slide__item hero-slide__item--days">6 дней/5 ночей</li>
                   <li class="hero-slide__item hero-slide__item--difficulty">Высокая сложность</li>
@@ -118,7 +118,7 @@
       </div>
     </section>
 
-    <section class="tours" data-test="tours">
+    <section class="tours" data-test="tours" id="tours">
       <div class="tours__container container">
         <h2 class="tours__title">Ближайшие туры</h2>
         <div class="tours__swiper">
@@ -229,7 +229,7 @@
       </div>
     </section>
 
-    <section class="training" data-test="training">
+    <section class="training" data-test="training" id="training">
       <div class="training__container container">
         <h2 class="training__title">
           Обучение
@@ -353,7 +353,7 @@
       </div>
     </section>
 
-    <section class="about" data-test="about">
+    <section class="about" data-test="about" id="about">
       <div class="about__container container">
         <h2>О нас</h2>
         <h3>История компании</h3>
@@ -363,7 +363,7 @@
       </div>
     </section>
 
-    <section class="reviews" data-test="reviews">
+    <section class="reviews" data-test="reviews" id="reviews">
       <div class="reviews__container container">
         <h2 class="reviews__title">Отзывы</h2>
 
@@ -485,7 +485,7 @@
       </div>
     </section>
 
-    <section class="gallery" data-test="gallery">
+    <section class="gallery" data-test="gallery" id="gallery">
       <div class="gallery__container">
         <div class="container">
           <h2 class="gallery__title">Фотогалерея</h2>
@@ -592,7 +592,7 @@
 
     <footer class="footer" data-test="footer">
       <div class="footer__container container">
-        <div class="footer__contacts contacts">
+        <div class="footer__contacts contacts" id="contacts">
           <h2 class="contacts__title">Контакты</h2>
           <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
           <ul class="contacts__list contact-list">
@@ -632,22 +632,22 @@
           </div>
           <ul class="inner-footer__list footer-list">
             <li class="footer-list__item footer-list__item--tours">
-              <a class="footer-list__link" href="#">Туры</a>
+              <a class="footer-list__link" href="#tours">Туры</a>
             </li>
             <li class="footer-list__item footer-list__item--reviews">
-              <a class="footer-list__link" href="#">Отзывы</a>
+              <a class="footer-list__link" href="#reviews">Отзывы</a>
             </li>
             <li class="footer-list__item footer-list__item--study">
-              <a class="footer-list__link" href="#">Обучение</a>
+              <a class="footer-list__link" href="#training">Обучение</a>
             </li>
             <li class="footer-list__item footer-list__item--photos">
-              <a class="footer-list__link" href="#">Фотографии</a>
+              <a class="footer-list__link" href="#gallery">Фотографии</a>
             </li>
             <li class="footer-list__item footer-list__item--about">
-              <a class="footer-list__link" href="#">О нас</a>
+              <a class="footer-list__link" href="#about">О нас</a>
             </li>
             <li class="footer-list__item footer-list__item--contacts">
-              <a class="footer-list__link" href="#">Контакты</a>
+              <a class="footer-list__link" href="#training">Контакты</a>
             </li>
           </ul>
           <ul class="inner-footer__social social">
@@ -681,13 +681,6 @@
         </div>
       </div>
     </footer>
-
-    <!-- пример использования спрайта -->
-<!--     <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg> -->
-    <!-- примеры требуемых атрибутов data-test="*" -->
 
     <script type="module" src="js/main.js"></script>
   </body>

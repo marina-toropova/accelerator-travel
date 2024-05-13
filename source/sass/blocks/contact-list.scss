@@ -112,6 +112,22 @@
     line-height: 24px;
     margin-top: 9px;
   }
+
+  &:hover {
+    color: $additional-20;
+  }
+
+  &:focus {
+    color: $additional-100;
+  }
+
+  &:active {
+    color: $active;
+  }
+
+  &[aria-disabled="true"] {
+    color: $disabled;
+  }
 }
 
 .contact-list__text {

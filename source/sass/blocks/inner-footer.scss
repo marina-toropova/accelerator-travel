@@ -98,4 +98,20 @@
     font-size: 18px;
     line-height: 18px;
   }
+
+  &:hover {
+    color: $additional-20;
+  }
+
+  &:focus {
+    color: $additional-100;
+  }
+
+  &:active {
+    color: $active;
+  }
+
+  &[aria-disabled="true"] {
+    color: $disabled;
+  }
 }

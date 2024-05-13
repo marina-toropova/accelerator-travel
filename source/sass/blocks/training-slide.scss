@@ -48,6 +48,23 @@
     border: 1px solid rgba(45, 56, 63, 0.3);
     justify-self: end;
     position: relative;
+
+    &:hover {
+      border-color: $primary;
+    }
+
+    &:focus {
+      border-color: $white-100;
+    }
+
+    &:active {
+      border-color: $additional-100;
+      background-color: $additional-100;
+    }
+
+    &:active use {
+      fill: $white-100;
+    }
   }
 
   a svg {
