@@ -11,6 +11,10 @@
       margin-top: 21px;
       width: 480px;
     }
+
+    @media (min-width: $desktop) {
+      margin-top: 23px;
+    }
   }
 }
 
@@ -24,6 +28,11 @@
     font-size: 25px;
     line-height: 25px;
   }
+
+  @media (min-width: $desktop) {
+    font-size: 35px;
+    line-height: 35px;
+  }
 }
 
 .contacts__list.contact-list {
@@ -31,5 +40,9 @@
 
   @media (min-width: $tablet) {
     margin-top: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 49px;
   }
 }

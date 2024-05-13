@@ -18,4 +18,3 @@ trainingSwiper.init();
 reviewsSwiper.init();
 advantagesSwiper.init();
 gallerySwiper.init();
-

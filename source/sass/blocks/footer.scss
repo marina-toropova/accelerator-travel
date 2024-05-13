@@ -1,11 +1,46 @@
+.footer {
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "contacts map"
+      "footer   footer";
+    padding-top: 99px;
+  }
+}
+
+.footer__container {
+  @media (min-width: $desktop) {
+    grid-area: contacts;
+    width: 720px;
+    padding: 0 0 95px 120px;
+  }
+}
+
 .footer__contacts {
   padding: 37px 0 30px;
 
   @media (min-width: $tablet) {
     padding: 60px 0 41px;
   }
+
+  @media (min-width: $desktop) {
+    padding: 24px 0 0;
+  }
 }
 
 .footer__map {
   padding-bottom: 20px;
+
+  @media (min-width: $desktop) {
+    grid-area: map;
+    padding-right: 120px;
+    padding-top: 50px;
+  }
+}
+
+.footer__inner-footer {
+  @media (min-width: $desktop) {
+    grid-area: footer;
+  }
 }

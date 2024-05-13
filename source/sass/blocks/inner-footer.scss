@@ -13,6 +13,19 @@
     column-gap: 42.3px;
     row-gap: 33px;
   }
+
+  @media (min-width: $desktop) {
+    grid-template-areas:
+      "logo   list   tel"
+      "social social social"
+      "text   text   text";
+    grid-template-rows: 60px auto auto;
+    grid-template-columns: 314px auto max-content;
+    column-gap: normal;
+    row-gap: 0;
+    padding-top: 54px;
+    padding-bottom: 32px;
+  }
 }
 
 .inner-footer__logo {
@@ -21,6 +34,11 @@
   @media (min-width: $tablet) {
     grid-area: logo;
     justify-self: start;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 29px;
+    margin-top: -14px;
   }
 }
 
@@ -31,6 +49,11 @@
     grid-area: list;
     margin: 0;
     align-self: center;
+  }
+
+  @media (min-width: $desktop) {
+    align-self: self-start;
+    column-gap: 31px;
   }
 }
 
@@ -53,5 +76,26 @@
   @media (min-width: $tablet) {
     grid-area: text;
     margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 22px;
+  }
+}
+
+.inner-footer__phone-link {
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: block;
+
+    @include link-reset;
+
+    grid-area: tel;
+    justify-self: right;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
   }
 }

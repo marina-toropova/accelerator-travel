@@ -5,6 +5,10 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
+
+  @media (min-width: $desktop) {
+    gap: 13px;
+  }
 }
 
 .social__link {
