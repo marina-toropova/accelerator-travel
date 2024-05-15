@@ -108,11 +108,11 @@
     color: $active;
   }
 
-  &[aria-disabled="true"].tours__link::after {
+  &:active.tours__link::after {
     background-color: $active;
   }
 
-  &:active {
+  &[aria-disabled="true"] {
     color: $disabled;
   }
 

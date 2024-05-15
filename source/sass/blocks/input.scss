@@ -1,0 +1,23 @@
+.input {
+  &:hover {
+    outline: 1px solid $additional-100;
+  }
+
+  &:focus {
+    outline: 1px solid $primary;
+  }
+
+  &:disabled {
+    outline: 1px solid $disabled;
+    pointer-events: none;
+  }
+
+  &:invalid {
+    outline: 1px solid $error;
+    pointer-events: none;
+  }
+
+  &:placeholder-shown {
+    color: $additional-100;
+  }
+}
